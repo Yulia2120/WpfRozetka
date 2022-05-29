@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfRozetka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="900" Width="1180" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="MainWindow" Height="900" Width="1360" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Window.Resources>
         <Style x:Key="VerticalSeparatorStyle" 
        TargetType="{x:Type Separator}"
@@ -40,6 +40,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="0.8*"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition/>
                 </Grid.RowDefinitions>
@@ -120,12 +121,12 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Text="Ноутбуки" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                <TextBlock Grid.Column="1" Text="Компьютеры" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                <TextBlock Grid.Column="2" Text="Мониторы" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                <TextBlock Grid.Column="3" Text="Gaming" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                <TextBlock Grid.Column="4" Text="Планшеты" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                <TextBlock Grid.Column="5" Text="Кабели и переходники" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
+                <TextBlock Grid.Column="0" Text="Ноутбуки" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="16"/>
+                <TextBlock Grid.Column="1" Text="Компьютеры" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="16"/>
+                <TextBlock Grid.Column="2" Text="Мониторы" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="16"/>
+                <TextBlock Grid.Column="3" Text="Gaming" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="16"/>
+                <TextBlock Grid.Column="4" Text="Планшеты" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="16"/>
+                <TextBlock Grid.Column="5" Text="Кабели и переходники" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="16"/>
             </Grid>
                 <Grid Grid.Row="6" Margin="20,0,20,0">
                     <Grid.ColumnDefinitions>
@@ -137,27 +138,27 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Border Background="#F6F6F6" Grid.Column="0" Grid.Row="3" Margin="10">
-                        <Image Source="" Margin="10"/>
+                        <Image Source="images/kompyuternye-komplektuyushchie.png" Margin="10"/>
                     </Border>
                     <Separator  Grid.Column="0" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
                     <Border Background="#F6F6F6" Grid.Column="1" Grid.Row="3" Margin="10">
-                        <Image  Source="images/kompyutery.png" Margin="10"/>
+                        <Image  Source="images/setevoe-oborudovanie.png" Margin="10"/>
                     </Border>
                     <Separator  Grid.Column="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0"  />
                     <Border Background="#F6F6F6" Grid.Column="2" Grid.Row="3" Margin="10">
-                        <Image  Source="images/monitory.png" Margin="10"/>
+                        <Image  Source="images/naushniki-i-aksessuary.png" Margin="10"/>
                     </Border>
                     <Separator  Grid.Column="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
                     <Border Background="#F6F6F6" Grid.Column="3" Grid.Row="3" Margin="10">
-                        <Image  Source="images/tovary-dlya-gejmerov.png" Margin="10"/>
+                        <Image  Source="images/klaviatury-i-myshi.png" Margin="10"/>
                     </Border>
                     <Separator  Grid.Column="3" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
                     <Border Background="#F6F6F6" Grid.Column="4" Grid.Row="3" Margin="10">
-                        <Image  Source="images/planshety.png" Margin="10"/>
+                        <Image  Source="images/aksessuari-dlia-elektronyky.png" Margin="10"/>
                     </Border>
                     <Separator  Grid.Column="4" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
                     <Border Background="#F6F6F6" Grid.Column="5" Grid.Row="3" Margin="10">
-                        <Image  Source="images/kabeli-i-perekhodniki.png" Margin="10"/>
+                        <Image  Source="images/ofisnaya-tekhnika.png" Margin="10"/>
                     </Border>
                     <Separator  Grid.Column="5" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
                 </Grid>
@@ -170,17 +171,72 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0" Text="Ноутбуки" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                    <TextBlock Grid.Column="1" Text="Компьютеры" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                    <TextBlock Grid.Column="2" Text="Мониторы" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                    <TextBlock Grid.Column="3" Text="Gaming" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                    <TextBlock Grid.Column="4" Text="Планшеты" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
-                    <TextBlock Grid.Column="5" Text="Кабели и переходники" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="18"/>
+                    <TextBlock Grid.Column="0" Text="Компьютерные комплектующие"  Foreground="#3D6C90" FontSize="16" TextWrapping="Wrap" Margin="25,0,0,0"/>
+                    <TextBlock Grid.Column="1" Text="Сетевое оборудование" Foreground="#3D6C90" FontSize="16" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="2" Text="Наушники и аксессуары" Foreground="#3D6C90" FontSize="16" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="3" Text="Клавиатуры и мыши" Foreground="#3D6C90" FontSize="16" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="4" Text="Аксессуары для электроники" Foreground="#3D6C90" FontSize="16" TextWrapping="Wrap" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="5" Text="Оргтехника" Foreground="#3D6C90" FontSize="16" Margin="10,0,0,0"/>
                 </Grid>
+                <Grid Grid.Row="8" Margin="5,0,15,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="SSD" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="25,0,0,0"/>
+                    <TextBlock Grid.Column="0" Grid.Row="1" Text="Системы охлаждения"  Foreground="#3D6C90" FontSize="13" Margin="25,0,0,0"/>
+                    <TextBlock Grid.Column="0" Grid.Row="2" Text="Видеокарты" Foreground="#3D6C90" FontSize="13" Margin="25,0,0,0"/>
+                    <TextBlock Grid.Column="0" Grid.Row="3" Text="Оперативная память" Foreground="#3D6C90" FontSize="13" Margin="25,0,0,0"/>
+                    <TextBlock Grid.Column="0" Grid.Row="4" Text="Процессоры" Foreground="#3D6C90" FontSize="13" Margin="25,0,0,0"/>
+                    <TextBlock Grid.Column="0" Grid.Row="5" Text="Материнские платы" Foreground="#3D6C90" FontSize="13" Margin="25,0,0,0"/>
+                    <TextBlock Grid.Column="0" Grid.Row="6" Text="Жесткие диски и дисковые массивы" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap"  Margin="25,0,0,0"/>
+                    <TextBlock Grid.Column="0" Grid.Row="7" Text="Блоки питания" Foreground="#3D6C90" FontSize="13" Margin="25,0,0,0"/>
+                    <TextBlock Grid.Column="1" Grid.Row="0" Text="Маршрутизаторы" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="1" Grid.Row="1" Text="Коммутаторы" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="1" Grid.Row="2" Text="Сетевые адаптеры" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="1" Grid.Row="3" Text="Пассивное сетевое оборудование" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="1" Grid.Row="4" Text="Беспроводные точки доступа" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="1" Grid.Row="5" Text="Ретрансляторы Wi-Fi" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="1" Grid.Row="6" Text="Патч корды" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="2" Grid.Row="0" Text="Наушники" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="2" Grid.Row="1" Text="Усилители для наушников" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="2" Grid.Row="2" Text="Аксессуары для наушников" Foreground="#3D6C90" FontSize="13" Margin="20,0,0,0"/>
+                    <TextBlock Grid.Column="3" Grid.Row="0" Text="Компьютерные мыши" Foreground="#3D6C90" FontSize="13" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="3" Grid.Row="1" Text="Игровые поверхности" Foreground="#3D6C90" FontSize="13" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="3" Grid.Row="2" Text="Клавиатуры" Foreground="#3D6C90" FontSize="13" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="3" Grid.Row="3" Text="Комплект: клавиатура и мышь" Foreground="#3D6C90" FontSize="13" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="3" Grid.Row="4" Text="Аксессуары для клавиатуры и мышек" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="4" Grid.Row="0" Text="Флеш память USB" Foreground="#3D6C90" FontSize="13" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="4" Grid.Row="1" Text="Хабы и кардридеры" Foreground="#3D6C90" FontSize="13" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="4" Grid.Row="2" Text="Аксессуары для ПК и ноутбуков" Foreground="#3D6C90" FontSize="13" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="4" Grid.Row="3" Text="Комплектующие для ноутбуков" Foreground="#3D6C90" FontSize="13" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="4" Grid.Row="4" Text="Сетевые фильтры, адаптеры и удлинители" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="4" Grid.Row="5" Text="Чехлы для планшетов" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="4" Grid.Row="6" Text="Сумки, рюкзаки и чехлы для ноутбуков" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="4" Grid.Row="7" Text="Чистящие средства" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="15,0,0,0"/>
+                    <TextBlock Grid.Column="5" Grid.Row="0" Text="МФУ/Принтеры" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="10,0,0,0"/>
+                    <TextBlock Grid.Column="5" Grid.Row="1" Text="Сканеры" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="10,0,0,0"/>
+                    <TextBlock Grid.Column="5" Grid.Row="2" Text="Расходные материалы для принтеров" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="10,0,0,0"/>
+                    <TextBlock Grid.Column="5" Grid.Row="3" Text="Доски, флипчарты" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="10,0,0,0"/>
 
 
-            </Grid>
-                  
+
+                </Grid>
+            </Grid>      
                 </ScrollViewer>
     </Grid>
 </Window>
