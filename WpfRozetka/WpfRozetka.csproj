@@ -94,5 +94,41 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\262025937.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\asus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\acer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lenovo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\samsung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\canon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tp-link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logitech.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\noutbuki.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
