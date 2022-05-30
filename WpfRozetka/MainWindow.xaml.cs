@@ -20,9 +20,33 @@ namespace WpfRozetka
     /// </summary>
     public partial class MainWindow : Window
     {
+        int i = 1;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Left_Click(object sender, RoutedEventArgs e)
+        {
+            i--; 
+
+            if (i < 1)
+            {
+                i = 5;
+            }
+            Gallery.Source = new BitmapImage(new Uri(@"Images/" + i + ".jpg", UriKind.Relative));
+        }
+
+        private void Right_Click(object sender, RoutedEventArgs e)
+        {
+            i++; 
+
+            if (i > 5)
+            {
+                i = 1;
+            }
+
+            Gallery.Source = new BitmapImage(new Uri(@"Images/" + i + ".jpg", UriKind.Relative));
         }
     }
 }

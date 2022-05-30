@@ -98,7 +98,7 @@
     <Resource Include="Images\apple.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\262025937.png" />
+    <Resource Include="Images\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\asus.png" />
@@ -167,11 +167,15 @@
     <Resource Include="Images\akusticheskie-sistemy.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\258891180.jpg" />
-    <Resource Include="Images\266429718.jpg" />
-    <Resource Include="Images\266653843.jpg" />
-    <Resource Include="Images\266989683.jpg" />
-    <Resource Include="Images\267310396.jpg" />
+    <Resource Include="Images\1.jpg" />
+    <Resource Include="Images\2.jpg" />
+    <Resource Include="Images\3.jpg" />
+    <Resource Include="Images\4.jpg" />
+    <Resource Include="Images\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\left.png" />
+    <Resource Include="Images\right.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
