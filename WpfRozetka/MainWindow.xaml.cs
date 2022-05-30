@@ -21,6 +21,7 @@ namespace WpfRozetka
     public partial class MainWindow : Window
     {
         int i = 1;
+   
         public MainWindow()
         {
             InitializeComponent();
@@ -47,6 +48,29 @@ namespace WpfRozetka
             }
 
             Gallery.Source = new BitmapImage(new Uri(@"Images/" + i + ".jpg", UriKind.Relative));
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            i--;
+
+            if (i < 1)
+            {
+                i = 3;
+            }
+            Gall2.Source = new BitmapImage(new Uri(@"img/" + i + ".JPG", UriKind.Relative));
+        }
+
+        private void Forward_Click(object sender, RoutedEventArgs e)
+        {
+            i++;
+
+            if (i > 3)
+            {
+                i = 1;
+            }
+
+            Gall2.Source = new BitmapImage(new Uri(@"img/" + i + ".JPG", UriKind.Relative));
         }
     }
 }

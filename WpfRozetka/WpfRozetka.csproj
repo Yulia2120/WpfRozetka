@@ -177,5 +177,31 @@
     <Resource Include="Images\left.png" />
     <Resource Include="Images\right.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\programmnoe-obespechenie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\graficheskie-planshety.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mikrofony.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\servernoe-oborudovanie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\interaktivnoe-oborudovanie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\back.png" />
+    <Resource Include="Images\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\2.JPG" />
+    <Resource Include="img\3.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
