@@ -26,14 +26,16 @@
         </Style>
     </Window.Resources>
     <Grid>
-                <Border Background="#303030" Height="40"   VerticalAlignment="Top" >
+        <Border Background="#303030" Height="40"   VerticalAlignment="Top" >
             <Image Source="Images/262025937.png" HorizontalAlignment="Left" Margin="20,0,0,0"/>
         </Border>
         <ScrollViewer>
-            
-        <Grid>
+            <StackPanel>
+                <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition/>
+                <RowDefinition Height="2*"/>
+                <!--<RowDefinition/>-->
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="0.8*"/>
@@ -42,9 +44,26 @@
                 <RowDefinition Height="0.8*"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
-                <RowDefinition/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="0.8*"/>
+                 <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
-            <Grid Grid.Row="1" Margin="20,0,20,0">
+
+                    <TextBlock Grid.Row="0" Text="Компьютеры и ноутбуки" FontSize="24" FontWeight="Medium" Margin="30,50,0,0"/>
+                    <Image Grid.Row="1" Source="images/258891180.jpg" Width="900" Height="300" Stretch="UniformToFill" Margin="0,20,0,60"/>
+                    <Button Grid.Row="1" Width="40" Height="40" Margin="0,0,850,0" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <Image Source="images/"/>
+                    </Button>
+                    <Button Grid.Row="1" Width="40" Height="40" Margin="850,0,0,0"></Button>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,35">
+                        <RadioButton GroupName="Radio" Margin="15,10,0,0" Background="#918F8F"/>
+                        <RadioButton GroupName="Radio" Margin="4,10,0,0" Background="#918F8F"/>
+                        <RadioButton GroupName="Radio" Margin="4,10,0,0" Background="#918F8F"/>
+                        <RadioButton GroupName="Radio" Margin="4,10,0,0" Background="#918F8F"/>
+                        <RadioButton GroupName="Radio" Margin="4,10,0,0" Background="#918F8F"/>
+                        <RadioButton GroupName="Radio" Margin="4,10,0,0" Background="#918F8F"/>
+                    </StackPanel>
+                    <Grid Grid.Row="2" Margin="20,0,20,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -57,28 +76,29 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" Grid.Row="1" Source="images/apple.png" Margin="10"/>
-                <Separator  Grid.Column="0" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
-                <Image Grid.Column="1" Grid.Row="1" Source="images/asus.png" Margin="10"/>
-                <Separator  Grid.Column="1" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
-                <Image Grid.Column="2" Grid.Row="1" Source="images/hp.png" Margin="10"/>
-                <Separator  Grid.Column="2" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
-                <Image Grid.Column="3" Grid.Row="1" Source="images/acer.png" Margin="10"/>
+              
+                 <Image Grid.Column="0" Grid.Row="2" Source="images/apple.png" Margin="10"/>
+                <Separator  Grid.Column="0" Grid.Row="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
+                <Image Grid.Column="1" Grid.Row="2" Source="images/asus.png" Margin="10"/>
+                <Separator  Grid.Column="1" Grid.Row="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
+                <Image Grid.Column="2" Grid.Row="2" Source="images/hp.png" Margin="10"/>
+                <Separator  Grid.Column="2" Grid.Row="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
+                <Image Grid.Column="3" Grid.Row="2" Source="images/acer.png" Margin="10"/>
                 <Separator  Grid.Column="3" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
-                <Image Grid.Column="4" Grid.Row="1" Source="images/lenovo.png" Margin="10"/>
-                <Separator  Grid.Column="4" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
-                <Image Grid.Column="5" Grid.Row="1" Source="images/samsung.png" Margin="10"/>
-                <Separator  Grid.Column="5" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
-                <Image Grid.Column="6" Grid.Row="1" Source="images/dell.png" Margin="10"/>
-                <Separator  Grid.Column="6" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
-                <Image Grid.Column="7" Grid.Row="1" Source="images/canon.png" Margin="10"/>
-                <Separator  Grid.Column="7" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
-                <Image Grid.Column="8" Grid.Row="1" Source="images/tp-link.png" Margin="10"/>
-                <Separator  Grid.Column="8" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
-                <Image Grid.Column="9" Grid.Row="1" Source="images/logitech.jpg" Margin="10"/>
-                <Separator  Grid.Column="9" Grid.Row="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
+                <Image Grid.Column="4" Grid.Row="2" Source="images/lenovo.png" Margin="10"/>
+                <Separator  Grid.Column="4" Grid.Row="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
+                <Image Grid.Column="5" Grid.Row="2" Source="images/samsung.png" Margin="10"/>
+                <Separator  Grid.Column="5" Grid.Row="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
+                <Image Grid.Column="6" Grid.Row="2" Source="images/dell.png" Margin="10"/>
+                <Separator  Grid.Column="6" Grid.Row="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
+                <Image Grid.Column="7" Grid.Row="2" Source="images/canon.png" Margin="10"/>
+                <Separator  Grid.Column="7" Grid.Row="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
+                <Image Grid.Column="8" Grid.Row="2" Source="images/tp-link.png" Margin="10"/>
+                <Separator  Grid.Column="8" Grid.Row="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
+                <Image Grid.Column="9" Grid.Row="2" Source="images/logitech.jpg" Margin="10"/>
+                <Separator  Grid.Column="9" Grid.Row="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" />
             </Grid>
-            <Grid Grid.Row="3" Margin="20,0,20,0">
+            <Grid Grid.Row="4" Margin="20,0,20,0">
                 <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -88,7 +108,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
                 <Border Background="#F6F6F6" Grid.Column="0" Grid.Row="3" Margin="10">
-                    <Image Grid.Column="0" Grid.Row="3" Source="images/noutbuki.png" Margin="10"/>
+                    <Image Grid.Column="0" Grid.Row="4" Source="images/noutbuki.png" Margin="10"/>
                 </Border>
                 <Separator  Grid.Column="0" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
                 <Border Background="#F6F6F6" Grid.Column="1" Grid.Row="3" Margin="10">
@@ -112,7 +132,7 @@
                 </Border>
                 <Separator  Grid.Column="5" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
             </Grid>
-                <Grid Grid.Row="4" Margin="5,0,15,0">
+                <Grid Grid.Row="5" Margin="5,0,15,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -128,7 +148,7 @@
                 <TextBlock Grid.Column="4" Text="Планшеты" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="16"/>
                 <TextBlock Grid.Column="5" Text="Кабели и переходники" HorizontalAlignment="Center" Foreground="#3D6C90" FontSize="16"/>
             </Grid>
-                <Grid Grid.Row="6" Margin="20,0,20,0">
+                <Grid Grid.Row="7" Margin="20,0,20,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -162,7 +182,7 @@
                     </Border>
                     <Separator  Grid.Column="5" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
                 </Grid>
-                <Grid Grid.Row="7" Margin="5,0,15,0">
+                <Grid Grid.Row="8" Margin="5,0,15,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -178,7 +198,7 @@
                     <TextBlock Grid.Column="4" Text="Аксессуары для электроники" Foreground="#3D6C90" FontSize="16" TextWrapping="Wrap" Margin="15,0,0,0"/>
                     <TextBlock Grid.Column="5" Text="Оргтехника" Foreground="#3D6C90" FontSize="16" Margin="10,0,0,0"/>
                 </Grid>
-                <Grid Grid.Row="8" Margin="5,0,15,0">
+                <Grid Grid.Row="9" Margin="5,0,15,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -232,11 +252,61 @@
                     <TextBlock Grid.Column="5" Grid.Row="1" Text="Сканеры" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="10,0,0,0"/>
                     <TextBlock Grid.Column="5" Grid.Row="2" Text="Расходные материалы для принтеров" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="10,0,0,0"/>
                     <TextBlock Grid.Column="5" Grid.Row="3" Text="Доски, флипчарты" Foreground="#3D6C90" FontSize="13" TextWrapping="Wrap" Margin="10,0,0,0"/>
-
-
-
                 </Grid>
-            </Grid>      
-                </ScrollViewer>
+       
+
+            <Grid Grid.Row="11" Margin="20,0,20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border Background="#F6F6F6" Grid.Column="0" Margin="10">
+                    <Image Source="images/akusticheskie-sistemy.png" Margin="10"/>
+                </Border>
+                <Separator  Grid.Column="0" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
+                <Border Background="#F6F6F6" Grid.Column="1" Grid.Row="3" Margin="10">
+                    <Image  Source="images/setevoe-oborudovanie.png" Margin="10"/>
+                </Border>
+                <Separator  Grid.Column="1" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0"  />
+                <Border Background="#F6F6F6" Grid.Column="2" Grid.Row="3" Margin="10">
+                    <Image  Source="images/naushniki-i-aksessuary.png" Margin="10"/>
+                </Border>
+                <Separator  Grid.Column="2" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
+                <Border Background="#F6F6F6" Grid.Column="3" Grid.Row="3" Margin="10">
+                    <Image  Source="images/klaviatury-i-myshi.png" Margin="10"/>
+                </Border>
+                <Separator  Grid.Column="3" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
+                <Border Background="#F6F6F6" Grid.Column="4" Grid.Row="3" Margin="10">
+                    <Image  Source="images/aksessuari-dlia-elektronyky.png" Margin="10"/>
+                </Border>
+                <Separator  Grid.Column="4" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
+                <Border Background="#F6F6F6" Grid.Column="5" Grid.Row="3" Margin="10">
+                    <Image  Source="images/ofisnaya-tekhnika.png" Margin="10"/>
+                </Border>
+                <Separator  Grid.Column="5" Style="{StaticResource VerticalSeparatorStyle}" HorizontalAlignment="Right" Margin="0,10,0,0" />
+            </Grid>
+            <Grid Grid.Row="12" Margin="5,0,15,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Акустические системы"  Foreground="#3D6C90" FontSize="16" TextWrapping="Wrap" Margin="25,0,0,0"/>
+                <TextBlock Grid.Column="1" Text="Сетевое оборудование" Foreground="#3D6C90" FontSize="16" Margin="20,0,0,0"/>
+                <TextBlock Grid.Column="2" Text="Наушники и аксессуары" Foreground="#3D6C90" FontSize="16" Margin="20,0,0,0"/>
+                <TextBlock Grid.Column="3" Text="Клавиатуры и мыши" Foreground="#3D6C90" FontSize="16" Margin="15,0,0,0"/>
+                <TextBlock Grid.Column="4" Text="Аксессуары для электроники" Foreground="#3D6C90" FontSize="16" TextWrapping="Wrap" Margin="15,0,0,0"/>
+                <TextBlock Grid.Column="5" Text="Оргтехника" Foreground="#3D6C90" FontSize="16" Margin="10,0,0,0"/>
+            </Grid>
+</Grid>
+        </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
