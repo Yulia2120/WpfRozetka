@@ -74,5 +74,7 @@ namespace WpfRozetka
 
             Gall2.Source = new BitmapImage(new Uri(@"img/" + i + ".JPG", UriKind.Relative));
         }
+
+      
     }
 }
