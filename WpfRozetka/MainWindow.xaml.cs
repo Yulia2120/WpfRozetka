@@ -26,21 +26,11 @@ namespace WpfRozetka
         {
             InitializeComponent();
         }
+      
 
-        private void Left_Click(object sender, RoutedEventArgs e)
+        private void Right_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            i--; 
-
-            if (i < 1)
-            {
-                i = 5;
-            }
-            Gallery.Source = new BitmapImage(new Uri(@"Images/" + i + ".jpg", UriKind.Relative));
-        }
-
-        private void Right_Click(object sender, RoutedEventArgs e)
-        {
-            i++; 
+            i++;
 
             if (i > 5)
             {
@@ -50,7 +40,19 @@ namespace WpfRozetka
             Gallery.Source = new BitmapImage(new Uri(@"Images/" + i + ".jpg", UriKind.Relative));
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
+        private void Left_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            i--;
+
+            if (i < 1)
+            {
+                i = 5;
+            }
+            Gallery.Source = new BitmapImage(new Uri(@"Images/" + i + ".jpg", UriKind.Relative));
+           
+        }
+
+        private void Back_MouseUp(object sender, MouseButtonEventArgs e)
         {
             i--;
 
@@ -61,7 +63,7 @@ namespace WpfRozetka
             Gall2.Source = new BitmapImage(new Uri(@"img/" + i + ".JPG", UriKind.Relative));
         }
 
-        private void Forward_Click(object sender, RoutedEventArgs e)
+        private void Forward_MouseDown(object sender, MouseButtonEventArgs e)
         {
             i++;
 

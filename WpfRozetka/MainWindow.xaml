@@ -52,12 +52,12 @@
 
                     <TextBlock Grid.Row="0" Text="Компьютеры и ноутбуки" FontSize="24" FontWeight="Medium" Margin="30,50,0,0"/>
                     <Image Name="Gallery"  Grid.Row="1" Source="images/1.jpg" Width="900" Height="300" Stretch="UniformToFill" Margin="0,20,0,60"/>
-                    <Button Name="Left" Click="Left_Click" Grid.Row="1" Width="40" Height="40" Margin="0,0,860,0" Background="{x:Null}" BorderBrush="{x:Null}">
-                        <Image Source="images/left.png"/>
-                    </Button>
-                    <Button Name="Right" Click="Right_Click" Grid.Row="1" Width="40" Height="40" Margin="860,0,0,0" Background="{x:Null}" BorderBrush="{x:Null}">
-                        <Image Source="images/right.png"/>
-                    </Button>
+                    <Image Name="Left"  Grid.Row="1" Width="40" Height="40" Margin="0,0,860,0" Source="images/left.png" MouseDown="Left_MouseDown"/>
+
+
+                    <Image Name="Right"  Grid.Row="1" Width="40" Height="40" Margin="860,0,0,0" Source="images/right.png" MouseDown="Right_MouseDown" />
+
+                
                     <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,35">
                         <RadioButton GroupName="Radio" Margin="15,10,0,0" Background="#918F8F"/>
                         <RadioButton GroupName="Radio" Margin="4,10,0,0" Background="#918F8F"/>
@@ -310,12 +310,17 @@
             </Grid>
                     <TextBlock Grid.Row="13" Text="Популярные товары" FontSize="18" Margin="30,20,0,0"/>
                     <Image Name="Gall2"  Grid.Row="14" Source="img/1.JPG" Margin="30,30,20,30"/>
-                    <Button Name="Back" Click="Back_Click" Grid.Row="14" Width="50" Height="50" Margin="0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left">
-                        <Image Source="images/back.png" />
-                    </Button>
-                    <Button Name="Forward" Click="Forward_Click" Grid.Row="14" Width="50" Height="50" Margin="0,0,10,0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right">
-                        <Image Source="images/forward.png" />
-                    </Button>
+                    <Image Name="Back"  Grid.Row="14" Width="50" Height="50" Margin="0" Source="images/back.png" HorizontalAlignment="Left" MouseUp="Back_MouseUp"/>
+                    <Image Name="Forward"  Grid.Row="14" Width="50" Height="50" Margin="0,0,10,0" Source="images/forward.png" HorizontalAlignment="Right" MouseDown="Forward_MouseDown"/>
+                    <StackPanel Grid.Row="14" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10">
+                        
+                        <RadioButton GroupName="Radio" Margin="15,10,0,0" Background="#918F8F"/>
+                        <RadioButton GroupName="Radio" Margin="4,10,0,0" Background="#918F8F"/>
+                        <RadioButton GroupName="Radio" Margin="4,10,0,0" Background="#918F8F"/>
+                    
+                    </StackPanel>
+                   
+
                 </Grid>
         </StackPanel>
         </ScrollViewer>
